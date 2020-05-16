@@ -1,0 +1,33 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width:80%;
+  border: 2px solid #004080;
+  background-color: white;
+}
+
+td{
+  border: 2px solid #004080;
+  text-align: left;
+  padding: 8px;
+  width:20%
+
+}
+#yy{
+  margin-top: -30px;
+  text-align: center;
+}
+#tet{
+  border: 2px solid #004080;
+}
+.jj{
+  text-align: center;
+  border: 2px solid #004080;
+  width: 80%;
+}
+tr:nth-child(even) {
+
+}
+.conn{
+    padding-bottom: 1px;
+}

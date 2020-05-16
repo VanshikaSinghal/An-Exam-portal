@@ -1,0 +1,499 @@
+{% extends 'basic.html' %}
+{% block title %}
+Application_Form
+{% endblock title %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/application.css'%}">
+{% endblock link %}
+{% block body %}
+<!-- container  -->
+<div class="container mt-1">
+  <div class="col-12">
+  <div class="card">
+  <div class="card-body">
+    <div class="row my-firstrow">
+    </div>
+    <div class="row my-secrow">
+      <div class="col-3">
+        <button class="button" disabled/>Registration</button>
+      </div>
+      <div class="col-3">
+        <button class="button button2">Application Form</button>
+      </div>
+      <div class="col-3">
+        <button class="button button3">Image Upload</button>
+      </div>
+      <div class="col-3">
+        <button class="button button4">Fee Payment</button>
+      </div>
+    </div><br/>
+    <div class="row justify-content-center">
+     <button class="btn btn-dark">Personal Details</button>
+    </div><br/>
+
+     <!--form1-->
+      <div class="form-sample">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name="name" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Date of Birth</label>
+              <div class="col-sm-9">
+                <input  type="date" class="form-control"name="birth"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Father's Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control"name="fathername" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Mother's Name</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name="mothername" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Gender</label>
+              <div class="col-sm-9">
+                <select class="form-control"name="gender">
+                <option>Male</option>
+                  <option>Female</option>
+                  <option>Transgender</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+             <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Nationality</label>
+              <div class="col-sm-9">
+                <select class="form-control"name="nationality">
+                <option>Indian</option>                  
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Parent's Domicile</label>
+              <div class="col-sm-9">
+                <select class="form-control"name="domicile">
+                 <option>Sikkim</option>
+                  <option>Himanchal Pradesh</option>
+                  <option>Jammu and Kashmir</option>
+                  <option>Jharkhand</option>
+                  <option>Karnataka</option>
+                  <option>Kerala</option>
+                  <option>Madya Pradesh</option>
+                  <option>Maharashtra </option>
+                  <option>Manipur</option>
+                  <option>Meghalaya</option>
+                  <option>Mizoram</option>
+                  <option>Nagaland </option>
+                  <option>Orissa</option>
+                  <option>Punjab</option>
+                  <option>Rajasthan</option>
+                  <option>Tamil Nadu </option>
+                  <option>Telangana</option>
+                  <option>Tripura</option>
+                  <option>Uttaranchal</option>
+                  <option>Uttar Pradesh</option>
+                  <option>UttaraKhand</option>
+                  <option>Ladhak</option>
+                  <option>Lakshdeep</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+             <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Category</label>
+              <div class="col-sm-9">
+                <select class="form-control"name="gender">
+                <option>Generel</option>
+                  <option>OBC</option>
+                  <option>SC</option>
+                  <option>ST</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Aadhar No</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control"name="aadhar" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><br/>
+
+
+  <div class="row justify-content-center">
+     <button class="btn btn-dark">Course and Exam City Options</button>
+  </div><br/>
+    <!--form2-->
+     <h6>Qualifying Examination:</h6>
+    <div class="form-sample">
+      <div class="row">
+        <div class="col-md-6">
+          <input type="checkbox" name="Intermediate">
+          <label for="Intermediate"> Intermediate</label><br>
+          <input type="checkbox" name="B.Ed">
+          <label for="B.Ed"> B.Ed</label><br>
+          <input type="checkbox" name="BSc." checked>
+          <label for="BSc."> BSc.</label><br><br>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">1st Choice of Exam City</label>
+              <div class="col-sm-9">
+                <select class="form-control"name="examcity1">
+                  <option>Gangtok</option>
+                  <option>Lachung</option>
+                  <option>Pelling</option>
+                  <option>Namchi</option>
+                  <option>Ravangla</option>
+                  <option>Yuksum</option>
+                </select>
+              </div>
+            </div>
+          </div>
+     </div>
+     <div class="row">
+        <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">2nd Choice of Exam City</label>
+              <div class="col-sm-9">
+                <select class="form-control"name="examcity2">
+                  <option>Lachen</option>
+                  <option>Yumesamdong</option>
+                  <option>Rinchenpong</option>
+                  <option>Jorethang</option>
+                  <option>Yangtey</option>
+                  <option>Rumtek</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">3rd Choice of Exam City</label>
+              <div class="col-sm-9">
+                <select class="form-control"name="examcity3">
+                  <option>Singtam</option>
+                  <option>Yangtey</option>
+                  <option>Rumtek</option>
+                  <option>Yumesamdong</option>
+                  <option>Lachen</option>
+                  <option>Jorethang</option>
+                </select>
+              </div>
+            </div> 
+     </div>
+    </div>
+  </div><br/>
+
+  <div class="row justify-content-center">
+     <button class="btn btn-dark">Educational Details</button>
+    </div><br/>
+  <div class="row">
+     <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Qualification</th>
+        <th>Pass Status</th>
+        <th>Course/Stream name</th>
+        <th>Board/University</th>
+        <th>Passing Year</th>
+        <th>Marks(%)</th>
+        <th>RollNo/EnrollNo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>INTERMEDIATE</td>
+        <td>
+          <select>
+          <option>Passing</option>
+          <option>Appearing</option>
+          </select>
+        </td>
+        <td>
+          <select>
+          <option>Intermediate</option>
+          <option></option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option>Sikkim university</option>
+            <option>ICSE</option>
+            <option>CBSE</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2020</option>
+            <option>2007</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2010</option>
+          </select>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>B.Ed</td>
+        <td>
+           <select>
+            <option>Passing</option>
+            <option>Appearing</option>
+          </select>
+        </td>
+        <td>
+          <select>
+          <option>Math</option>
+          <option>Physics</option>
+          <option>Geography</option>
+          <option>English</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option>Sikkim university</option>
+            <option>ICSE</option>
+             <option>CBSE</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2020</option>
+            <option>2007</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2010</option>
+          </select>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>BSc.</td>
+        <td>
+          <select>
+            <option>Passing</option>
+            <option>Appearing</option>
+          </select>
+        </td>
+        <td>
+          <select>
+          <option>Math</option>
+          <option>Physics</option>
+           <option>Chemistry</option>
+         
+          </select>
+        </td>
+        <td>
+          <select>
+            <option>Sikkim university</option>
+            <option>ICSE</option>
+             <option>CBSE</option>
+          </select>
+        </td>
+        <td>
+          <select>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2020</option>
+            <option>2007</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2010</option>
+          </select>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div><br/>
+  <div class="row justify-content-center">
+      <button class="btn btn-dark">Communication Details</button>
+    </div><br/>
+     <div class="form-sample">
+     <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Address1</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control"name="address1" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Address2</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="address2" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Country</label>
+          <div class="col-sm-9">
+            <select class="form-control"name="country">
+            <option>India</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">City/Town/Village</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="city"/>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="row">
+    <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">State</label>
+          <div class="col-sm-9">
+            <select class="form-control" name="state">
+               <option>Sikkim</option>
+                <option>Himanchal Pradesh</option>
+                <option>Jammu and Kashmir</option>
+                <option>Jharkhand</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Madya Pradesh</option>
+                <option>Maharashtra </option>
+                <option>Manipur</option>
+                <option>Meghalaya</option>
+                <option>Mizoram</option>
+                <option>Nagaland </option>
+                <option>Orissa</option>
+                <option>Punjab</option>
+                <option>Rajasthan</option>
+                <option>Tamil Nadu </option>
+                <option>Telangana</option>
+                <option>Tripura</option>
+                <option>Uttaranchal</option>
+                <option>Uttar Pradesh</option>
+                <option>UttaraKhand</option>
+                <option>Ladhak</option>
+                <option>Lakshdeep</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">District</label>
+          <div class="col-sm-9">
+             <input type="text" class="form-control" name="phoneno" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Phone No.</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="phoneno" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label"> Pin Code</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control"name="pincode" />
+          </div>
+        </div>
+      </div>
+    </div><br/>
+    <div class="row justify-content-center">
+     <button class="btn btn-dark">Choose Password</button>
+  </div> <br/>
+  <div class="form-sample">
+    <div class="row">
+    <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Password</label>
+          <div class="col-sm-9">
+            <input type="password" class="form-control" name="password" required />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Confirm Password</label>
+          <div class="col-sm-9">
+            <input type="password" class="form-control" name="password1"required />
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+    <div class="col text-center">
+        <button type="button" class="btn btn-dark Submit">Submit</button>
+     </div>
+
+
+
+
+
+
+  </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+{% endblock body %}

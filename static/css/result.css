@@ -1,0 +1,29 @@
+
+#cf{
+  
+margin-left: 50%;
+  font-family: serif;
+}
+
+#but1{
+  margin-left: 19%;
+    width: 125px;
+    position: relative;
+    
+}
+.new{
+    padding-left: 12px;
+}
+.content
+{
+    text-align:  center;
+}
+.new1{
+    padding-bottom: 1px;
+}
+.inn{
+    border: 2px solid #004080;
+    margin-left: 120px;
+    margin-right: 120px;
+    
+}

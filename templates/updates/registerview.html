@@ -1,0 +1,251 @@
+{% extends 'basic.html' %}
+{% block title %}
+Register_View
+{% endblock title %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/reg.css' %}">
+{% endblock link %}
+
+{% block body %}
+<!-- container  -->
+<div class="container mt-1">
+  <div class="col-12">
+  <div class="card">
+  <div class="card-body">
+  <div class="row my-firstrow">
+  </div>
+
+  <div class="row my-secrow">
+    <div class="col-3">
+        <button class="button">Registration</button>
+    </div>
+    <div class="col-3">
+        <button class="button button2">Application Form</button>
+    </div>
+    <div class="col-3">
+        <button class="button button3">Image Upload</button>
+    </div>
+    <div class="col-3">
+        <button class="button button4">Fee Payment</button>
+    </div>
+  </div>
+  <div class="row justify-content-center m-2">
+     <button class="btn btn-dark disabled">Personal Details</button>
+  </div>
+  <!--form1-->
+  <form action="/handleregister" method='post'>
+  {% csrf_token %}
+  <div class="form-sample">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">First Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="fname" id='fname' required />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Last Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="lname" id='lname' required />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Father's Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control"name="fathername" id='fathername' required />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Mother's Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="mothername" id='mothername' required/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Gender</label>
+          <div class="col-sm-9">
+            <select class="form-control"name="gender" >
+            <option value='male'>Male</option>
+              <option value='female'>Female</option>
+              <option value='Others'>Others</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Date of Birth</label>
+          <div class="col-sm-9">
+            <input  type="date" class="form-control"name="DOB"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center m-2">
+      <button class="btn btn-dark disabled">Contact Details</button>
+    </div>
+  <div class="form-sample">
+     <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Address1</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control"name="address1"  />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Address2</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="address2" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Country</label>
+          <div class="col-sm-9">
+            <select class="form-control"name="country">
+            <option>India</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">City/Town/Village</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="city"/>
+          </div>
+        </div>
+      </div>
+    </div>
+     <div class="row">
+    <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">State</label>
+          <div class="col-sm-9">
+            <select class="form-control" name="state">
+               <option value='sikkim' >Sikkim</option>
+                <option value='himachal pradesh'>Himanchal Pradesh</option>
+                <option value='jammu and kashmir'>Jammu and Kashmir</option>
+                <option value='jharkhand'>Jharkhand</option>
+                <option value='karnataka'>Karnataka</option>
+                <option value='kerala'>Kerala</option>
+                <option value='madhya pradesh'>Madhya Pradesh</option>
+                <option value='maharashtra'>Maharashtra </option>
+                <option value='manipur'>Manipur</option>
+                <option value='meghalaya'>Meghalaya</option>
+                <option value='mizoram'>Mizoram</option>
+                <option value='nagaland'>Nagaland </option>
+                <option value='orissa'>Orissa</option>
+                <option value='punjab'>Punjab</option>
+                <option value='rajasthan'>Rajasthan</option>
+                <option value='tamil nadu'>Tamil Nadu </option>
+                <option value='telangana'>Telangana</option>
+                <option value='tripura'>Tripura</option>
+                <option value='uttranchal'>Uttaranchal</option>
+                <option value='uttar pradesh'>Uttar Pradesh</option>
+                <option value='uttarakhand'>UttaraKhand</option>
+                <option value='ladhak'>Ladhak</option>
+                <option value='lakshdeep'>Lakshdeep</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">District</label>
+          <div class="col-sm-9">
+             <input type="text" class="form-control" name="district" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Phone No.</label>
+          <div class="col-sm-9">
+            <input type="tel" class="form-control" name="phone" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label"> Pin Code</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control"name="pincode" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Email-Id</label>
+          <div class="col-sm-9">
+            <input type="Email" class="form-control"name="email" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">       
+         <div class="form-group row">
+          <label class="col-sm-3 col-form-label"> Confirm Email-Id</label>
+          <div class="col-sm-9">
+            <input type="Email" class="form-control"name="email1" />
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+  <div class="row justify-content-center m-2">
+     <button class="btn btn-dark disabled">Choose Password</button>
+  </div> 
+  <div class="form-sample">
+    <div class="row">
+    <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Password</label>
+          <div class="col-sm-9">
+            <input type="password" class="form-control" name="pass1" required />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Confirm Password</label>
+          <div class="col-sm-9">
+            <input type="password" class="form-control" name="pass2" required />
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+    <div class="col text-center">
+        <button type="submit" class="btn btn-primary Submit">Submit</button>
+     </div>
+     </form>
+</div> 
+</div>
+</div>
+</div>
+{% endblock body %}

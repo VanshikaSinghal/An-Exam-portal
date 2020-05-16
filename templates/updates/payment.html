@@ -1,0 +1,33 @@
+{% extends 'basic.html' %}
+{% block title %}
+Payment
+{% endblock title %}
+{% block body %}
+<div class="container mt-2" style='min-height:60vh;'>
+   <div class="jumbotron">
+        <h3 align='center' id=cc>Payment Confirmation</h3>
+        <br>
+       <h4 align=center id=bb>You have selected STET Paper 1 which amounts to Rs.500</h4>
+       <br>
+       <br>
+        <div class="col text-center">
+          <button type="button" class="btn btn-dark">Click Here to Proceed</button>
+        </div>
+        <br>
+        <br>
+        <h4 align='center' id='cd'>Reminder for Candidate!</h4>
+        <p align='center'>An applicant who intends to participate in both the categories (primary and Graduate) will have to apply and sit in both the papers separately and pay the fee for both the tests. Both Level I and Level II (i.e. for Primary and Graduate teacher) will be conducted on the same day. Total number of questions will be 150 containing Multiple Choice Questions. For each Correct Answer 1 marks will be awarded and there will be no negative marking in STET Sikkim Exam 2019. Candidates will be given 2.30 hours for solving full Question paper. The Exam Timings are 10.00 am to 12:30 pm for (Elementary (GT) teacher) and 01:30 pm to 4.00 pm for (Primary teacher).</p>
+
+    </div>
+
+<form action=" https://securegw-stage.paytm.in/order/process" method="post" name="paytm">
+    {% for key,value in param_dict.items %}
+    <input type="hidden" name="{{key}}" value="{{value}}">
+{% endfor%}
+</form>
+
+</div>
+{% endblock body %}
+{% block js %}
+document.paytm.submit();
+{% endblock js %}

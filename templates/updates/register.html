@@ -1,0 +1,64 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}
+Register
+{% endblock title %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/register.css' %}">
+
+{% endblock link %}
+
+{% block body %}
+<!-- container  -->
+<div class="container mt-1 cand">
+<div><h2 align="center" class="head">Register/Sign in</h2></div>
+ <div class="row">
+    <div class="col column1">
+        <div class="card" >
+              <h5 align ='left' id='bg'><u>NEW CANDIDATE REGISTRATION</u></h5>
+               <h4 align ='center'>Steps to apply online</h4>
+               <br>
+            <ul id='ull'>
+              <li id="bnm">Apply for Online Registration</li>
+              <li id="bnm">Fill Online Application Form</li>
+              <li id="bnm">Upload Scannned Photo & Signature</li>
+              <li id="bnm">Pay Examination Fee</li>
+              <br>
+              <br>
+              <div class="col text-center">
+                  <a href="/instruction" class='btn btn-dark' role='button'> New Registration</a>
+              </div>
+
+            </ul>
+        </div>
+    </div>
+    <div class="col column2">
+    <div class="card ">
+            <h5 align='left' id='bg'><u>ONLY REGISTERED CANDIDATES SIGN IN</u></h5>
+            <br>
+            <br>
+            <div id='cv'>
+
+              <form action="/handlelogin" method='post'>
+                {% csrf_token %}
+                <br>
+                  Phone No. :&nbsp;&nbsp;&nbsp;
+                  <input name="loginusername" type="number"><br>
+                  <br>
+                      Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input name="loginpassword" type="Password">
+                  <br>
+                  <br>
+
+                 
+                 </div>
+                 <br>
+         <div class="col text-center">
+           <button  type="submit" class="btn btn-dark btn1">Sign In</button>
+         </div>
+          </form>
+    </div>
+  </div>
+    </div>
+</div>
+{% endblock %}

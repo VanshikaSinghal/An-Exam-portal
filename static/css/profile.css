@@ -1,0 +1,25 @@
+.mt-1{
+  border:1px solid #004080;
+  /*border-radius: 15px;*/
+}
+.my-firstrow{
+  height:50px;
+  background-color:#1a90c5;
+}
+#profile{
+	 color: white;
+	 font-family:40px;
+	 padding-top:7px;
+}
+.btn1 {
+  background-color:#0079f2;
+  border-radius:0px;
+  color: white;
+  height:35px;
+  width: 25%;
+  font-size: 20px;
+  margin-top:15px;
+  margin-bottom: 10px;
+  cursor:none;
+  padding-top:2px;
+}

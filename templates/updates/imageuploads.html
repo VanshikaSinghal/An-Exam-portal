@@ -1,0 +1,145 @@
+{% extends 'basic.html' %}
+{% block title %}
+Upload
+{% endblock title %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/imageupload.css'%}">
+{% endblock link %}
+
+{% block body %}
+<!-- container  -->
+<div class="container mt-1">
+  <div class="col-12">
+  <div class="card">
+  <div class="card-body">
+  <div class="row my-firstrow">
+  </div>
+  <div class="row my-secrow">
+    <div class="col-3">
+        <button class="button button1">Registration</button>
+    </div>
+    <div class="col-3">
+        <button class="button button2">Application Form</button>
+    </div>
+    <div class="col-3">
+        <button class="button button3">Image Upload</button>
+    </div>
+    <div class="col-3">
+        <button class="button button4">Fee Payment</button>
+    </div>
+  </div>
+<div class="row justify-content-center">
+   <button class="btn1 bh">Upload Documents</button>
+</div>
+<br>
+<div class="jumbotron">
+<form action="/handleimage" action='post'>
+{% csrf_token %}
+<div id=ff class="form-sample" align='center'>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group row">
+        <label class="col-sm-3 col-form-label">10th Marksheet</label>
+        <div class="col-sm-9">
+          <input type="file" name='tenmark'>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group row">
+        <label class="col-sm-3 col-form-label"><span color='red'>*</span>12th Marksheet</label>
+        <div class="col-sm-9">
+          <input type="file" name='twmark'>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group row">
+        <label class="col-sm-3 col-form-label">Graduation Marksheet</label>
+        <div class="col-sm-9">
+          <input type="file" name='gmark' />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group row">
+        <label class="col-sm-3 col-form-label">B.Ed Marksheet</label>
+        <div class="col-sm-9">
+          <input type="file"  name='bmark' />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group row">
+        <label class="col-sm-3 col-form-label">Subject Certificate</label>
+        <div class="col-sm-9">
+        <input type="file"  name='smark' />
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group row">
+        <label class="col-sm-3 col-form-label">Birth Certificate</label>
+        <div class="col-sm-9">
+          <input  type="file" name='bcertificate'/>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="form-group row">
+        <label class="col-sm-3 col-form-label">Community Certificate</label>
+        <div class="col-sm-9">
+        <input type="file" name='ccertificate'/>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group row">
+        <label class="col-sm-3 col-form-label">Scanned Photograph</label>
+        <div class="col-sm-9">
+        <input type="file"  name='photo'/>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group row">
+        <label class="col-sm-3 col-form-label">Scanned Signature</label>
+        <div class="col-sm-9">
+        <input type="file"  name='sign'/>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="container"id='vv'>
+    <br>
+    <h3 align=center>Specifications for Uploading Scanned Photograph and Signature</h3>
+    <br>
+    </form>
+  </div>
+
+
+     <ul>
+       <li>The scanned photograph and signature should be in jpg format.</li>
+       <li>The dimensions for digital Photo should be of 140 pixel height ✕ 110 pixel and the size should be in between 3kb – 40kb.</li>
+       <li>The dimensions for digital Signature should be of 110 pixel height ✕ 140 pixel and the size should be in between 1kb-40kb.</li>
+
+     </ul>
+  </div>
+  </div>
+  </div>
+  <center>
+    <button type="submit" class="btn btn-gradient-success btn-lg mr-2 submit1">Submit</button>
+   </center>
+  </div>
+
+  </div>
+
+{% endblock body %}

@@ -1,0 +1,23 @@
+{% extends 'basic.html' %}
+{% block title %}
+{{posts.slug}}
+{% endblock title %}
+ 
+
+ {% block body %}
+ <div class="container pt-2 mt-2 " style='height:80vh;'>
+ <div class="col-md-8 blog-main">
+      <h3 class="pb-4 mb-4 font-italic border-bottom">
+        {{posts.question}}
+      </h3>
+
+      <div class="blog-post">
+        {% comment %} <h2 class="blog-post-title">{}</h2> {% endcomment %}
+        <p class="blog-post-meta">{{posts.timestamp}} by <a href="#">{{posts.author}}</a></p>
+
+        <p>{{posts.content}}</p>
+        <hr>
+        </div>
+ </div>
+ </div>
+ {% endblock body %}

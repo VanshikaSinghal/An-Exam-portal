@@ -1,0 +1,13 @@
+.table1{
+    border: 3px solid #004080;
+  }
+.box{
+    border: 2px solid #004080;
+    padding: 20px;
+}
+th,td,tr{
+     border: 4px solid #004080;
+}
+.conn{
+    padding-bottom: 15px;
+}

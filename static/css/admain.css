@@ -1,0 +1,98 @@
+body{
+    background-color: grey;
+}
+
+
+.container{
+    background-color: white;
+    margin-top: 10px;
+    
+    padding: 30px;
+   
+}
+.cleaner{
+    height: 15px;
+}
+#logo{
+
+    height: 100px;
+    width:100px;
+    margin-left: 2%;
+    float: left;
+}
+#header{
+    background-color: RGB(229, 233, 240);
+    height: 110px;
+    
+    border: 1px solid black;
+    
+   
+}
+h1{
+    float:center;
+   padding-top: 2%;
+    margin-right: 11%;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 40px;
+    
+    
+}
+#border{
+  
+    padding: 40px;
+    border: black solid 2px;
+    overflow: hidden;
+  
+}
+#bor{
+    
+    padding: 8px;
+}
+.col{
+    border: black solid 1px;
+}
+#two{
+ background-color: lightgrey;
+    padding: 7px;
+    border: black 1px solid;
+}
+#main{
+    width: 75%;
+    border: 1px solid black;
+    padding: 10px;
+    float: left;
+    padding-left: 50px;
+    
+}
+#photo{
+    float: right;
+   border: 1px solid black;
+    width: 170px;
+    height: 200px;
+    margin-right: 30px;
+    padding-top: 40px;
+    margin-top: 32px;
+}
+h3{
+    line-height: 20px;
+}
+#sign{
+    height: 70px;
+    width: 360px;
+    border: 1px solid black;
+    
+}
+.clear {
+    clear:both;
+}
+span
+{
+    width:250px;
+    clear:left;
+    float:left;
+    text-align:right;
+    padding-right:2px;
+}
+.detail{
+    font-size: 16px;
+}

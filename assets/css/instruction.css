@@ -1,0 +1,71 @@
+.mt-1{
+  border:1px solid #004080;
+  /*border-radius: 15px;*/
+}
+.my-firstrow{
+  height:30px;
+  background-color:#004080;
+}
+.button{
+  background-color:#950095;
+  border-radius:15px;
+  color: white;
+ /*padding: 14px 40px;*/
+  height:50px;
+  width:80%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {background-color: #ff5959;}
+.button3 {background-color: #2894ff;}
+.button4 {background-color: #8c8c00;}
+.disabled{
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.my-secrow{
+  height:30px;
+  background-color:#004080;
+}
+.instruction{
+
+  font-size: 20px;
+  color:white;
+  font-family:Times New Roman;
+    margin: 2px;
+    margin-left: 25%;
+
+
+}
+.btn {
+  background-color:#0079f2;
+  border-radius:15px;
+  color: white;
+  height:35px;
+  width: 25%;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top:15px;
+  padding-top:2px;
+}
+.btn:hover {
+  background-color:#004080;
+  color: white;
+}
+ol.alllist{
+  margin-top:10px;
+  font-weight:bold;
+}
+li.listing{
+  padding-top:1em;
+}
+.check{
+  margin-left:5%;
+}
+#bb{
+  margin-left: 370px;
+}

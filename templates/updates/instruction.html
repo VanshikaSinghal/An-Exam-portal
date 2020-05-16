@@ -1,0 +1,125 @@
+{% extends 'basic.html' %}
+{% block title %}
+Instruction
+{% endblock title %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/instruction.css'%}">
+{% endblock link %}
+
+{% block css %}
+{% endblock css %}
+
+{% block body %}
+<!-- container  -->
+<div class="container mt-1">
+  <div class="row my-firstrow">
+  </div>
+<br>
+  <div class="row">
+    <div class="col-3">
+        <button class="button">Registration</button>
+    </div>
+    <div class="col-3">
+        <button class="button button2 disabled">Application Form</button>
+    </div>
+    <div class="col-3">
+        <button class="button button3 disabled">Image Upload</button>
+    </div>
+    <div class="col-3">
+        <button class="button button4">Fee Payment</button>
+    </div>
+  </div>
+<br>
+  <div class="row my-secrow">
+      <p align="center" class="instruction">Instruction and Procedure For Online Submission of Application Form </p>
+  </div>
+
+  <div class="row justify-content-center my-thirdrow">
+      <button class="btn down" onclick="printDiv()"><i class="fa fa-download"></i> Download</button>
+  </div>
+  <div class="row my-fourthrow" id="pr">
+    <ol class="alllist">
+      <li class="listing">Please read the instructions and procedures carefully and keep all the necessary information and scanned images(s) of Photograph, Signature ready before you start filling the On-Line Application Form. You should also be ready with your personal Mobile Number and / or a personal E-Mail ID.</li>
+      <li class="listing">Candidates of STET - 2020 have to apply ONLINE ONLY. </li>
+      <li class="listing">  Please ensure that you are filling genuine application form available online at STET website (https://sikkimstet.nic.in). </li>
+      <li class="listing">  The Entrance Examination Fee for STET-2020 is ₹500/- for Male/Female candidates of General & OBC category and ₹300/- for Female candidates of all categories and SC/ST/PH candidates.</li>
+      <li class="listing">Candidates are allowed to submit only one application form. Multiple applications of a candidate are liable to be rejected. Candidate's Name in the Application Form must be the same as registered in Qualifying Examination. Registration Procedure: 4 Simple Steps to be followed </li>
+      <li class="listing">Candidate's Name in the Application Form must be the same as registered in Qualifying Examination. </li>
+      <li class="listing">Registration Procedure: 4 Simple Steps to be followed
+        <ul style="list-style-type:none;">
+           <li>Step1:Online filling of Registration Form:
+            <p class="onfill">Candidates will be required to fill the online registration form. After successful submission, an Application number gets generated that will be used for future reference. During form filling, candidate is also required to choose PASSWORD. For subsequent login, system generated Application No. and chosen Password will be used. Candidate must give a working and Correct
+            </p>
+          </li>
+           <li>MOBILE NO</li>
+           <li>Step 2:  Online filling of Application Form:
+            <p class="onfill"> Fill Online Application Form and candidate needs to fill up other personal information and choose examination city.</p>
+           <li>
+           <li>Step 3:  Online Uploading of Scanned Images:
+             <ul style="list-style-type:disc;">
+                <li>Uploading of scanned Photo, signature are mandatory for all candidates.</li>
+                <li>Scanned Images should be in JPG format. Candidates are required to upload all images in one-go. Partial uploading is not allowed.</li>
+                <li>Photographs: Size must be between 10KB to 200KB (3.5 cm X 4.5 cm).<li>
+                <li> Signature: Size must be between 3KB to 30KB (3.5 cm X 1.5 cm).</li>
+              </ul>
+              <p>**NOTE : The Candidate will be able to modify/correct the particulars before the image upload.</p>
+            </li>
+            <li> Step 4:Fee Payment:</li>
+            <ul style="list-style-type:disc;">
+              <li>Payment by Debit/Credit Card: The candidate has to select Debit/Credit Card option to pay the fee and follow the instruction to complete the payment process. After successful payment, candidate will be able to print the “Confirmation Page.</li>
+             </ul>
+             <li>Download and keep a copy of the confirmation page. IT'S MUST FOR ALL FUTURE REFERENCE.    </li>
+        </ul>
+       </li>
+       <li>After final submission of an application, no entries in the Application Form can be changed at a later stage.
+       </li>
+       <li> The Application Number printed on the computer generated “Confirmation Page” must be mentioned in all future correspondences. It is therefore essential to note down the APPLICATION NUMBER printed on the Confirmation Page.
+       </li>
+       <li> Examination fee is non-refundable.</li>
+       <li>Retrieve Password &amp; Application No :
+         <ul style="none">
+           <li>Password can be retrieved: </li>
+           <p>Go To<link rel="stylesheet" type="text/css" href="#"> https://examinationservices.nic.in/examsys/ForgotPassword/PwdResetOptno.aspx </p>
+           <li>Application No can be retrieved:</li>
+           <p>Go to https://examinationservices.nic.in/examsys/ForgotPassword/ForgetRegistration.aspx</p>
+          </ul>
+        </li>
+</ol>
+<div class="row">
+    <center>
+  <input type="checkbox" class="check" id='bb'> I have downloaded Information Bulletin, read and understood all the instructions.<br>
+</center>
+<br>
+<br>
+
+</div>
+
+  </div>
+
+<div align='center'>
+<a href="registerview" role ="button" class ='btn btn-success m-2' align ='center'> Register </a>
+</div>
+  </div>
+ </div> 
+  <br>
+  </div>
+{% endblock body %}
+{% block js %}
+<script>
+    function printDiv() {
+     var printContents = document.getElementById('pr').innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;
+}
+
+
+    </script>
+
+{% endblock js %}
+

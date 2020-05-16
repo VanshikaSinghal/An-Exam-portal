@@ -1,0 +1,42 @@
+{% extends 'basic.html' %}
+{% block title %}
+Payment_Status
+{% endblock title %}
+{% block title%}Payment status{% endblock %}
+{% block body %}
+    <!-- container  -->
+<div class="container mt-1">
+    <div class="jumbotron">
+
+        <h3 align='center' id=cc>Payment Successful!</h3>
+        <img id="calender"src="images/successful.png" alt="">
+        <br>
+        <br>
+       <h4 align=center id=bb>You have successfuly registered for STET Paper 1</h4>
+       <br>
+       <br>
+        <div class="col text-center">
+          <button type="button" class="btn btn-dark">Click Here to Print Payment Receipt</button>
+        </div>
+        <br>
+        <br>
+        <h4 align='center' id='cd'>You can now Log In through your Application Number and Password</h4>
+        <h5 align=center id='cd'>Keep Your Password to yourself to avoid any ambiguity </h5>
+    </div>
+
+
+    
+    {{response}}
+    <div class="col my-4">
+            
+        <h2>Payment status regarding your order Id {{response.ORDERID}}</h2>
+        {% if response.RESPCODE == '01' %}
+        ORDER SUCCESS
+        {% else %}
+        ORDER FAILURE
+        {% endif%}
+
+    </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,391 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="keywords" content="footer, address, phone, icons" />
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	{% block link %}
+
+    {% endblock link %}
+    <title>{% block title %}
+    {% endblock title %}</title>
+<style>body{
+    background-color:#e7e7e7;
+
+}
+
+#logo{
+
+    height: 100px;
+    width:100px;
+    margin-left: 2%;
+    float: left;
+}
+
+
+
+#header{
+    background-color: RGB(229, 233, 240);
+    height: 110px;
+     border-left: 3px solid #c7c7c7;
+     border-right: 3px solid #c7c7c7;
+     border-top: 5px solid #c7c7c7;
+
+}
+#abcd{
+  color: white;
+}
+
+#ab{
+    float:center;
+   padding-top: 2%;
+    margin-right: 10%;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 3vw;
+
+    align-content: center;
+    
+
+}
+.container{
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    
+
+}
+
+
+
+
+
+#navb{
+    background-color:#82356f;
+    border-left: 3px solid #c7c7c7;
+    border-right: 3px solid #c7c7c7;
+    border-top: 3px solid #c7c7c7;
+    border-bottom: 3px solid #c7c7c7;
+
+
+}
+
+.active:hover{
+  background-color: RGB(150, 242, 215)	 ;
+  transition: 0.3s;
+
+}
+.navh li a{
+    transition-timing-function: linear;
+}
+
+
+
+
+.footer-distributed{
+    position: relative;
+    bottom: 0;
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing:border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+  
+
+	padding: 10px 50px;
+	margin-top: 10px;
+
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-distributed .footer-left{
+	width: 40%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+
+.footer-distributed .footer-right{
+	width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
+
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+
+}
+/*
+.table1{
+  border: 3px solid #c7c7c7;
+}
+*/
+
+{% block css %}
+{% endblock css %}
+</style>
+</head>
+
+<body>
+   <div id="header">
+
+	    <img  id="logo"src= "{% static 'images/sik.gif' %}" alt="Government of Sikkim">
+	    <h1 id='ab' align="center">STET 2020 SIKKIM</h1>
+	</div>
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navb">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" >
+      <li class="nav-item {% block homeactive %}
+      {% endblock homeactive %}">
+        <a class="nav-link navh" href="/" >Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item {% block aboutactive %}
+      {% endblock aboutactive %}">
+        <a class="nav-link navh" href="/about">About<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item {% block supportactive %}
+      {% endblock supportactive %}">
+        <a class="nav-link navh" href="/support">Support <span class="sr-only">(current)</span></a>
+      </li>
+            <li class="nav-item {% block contactactive %}
+            {% endblock contactactive %}">
+        <a class="nav-link navh" href="/contact">Contact<span class="sr-only">(current)</span></a>
+      </li>
+            <li class="nav-item {% block faqactive %}
+            {% endblock faqactive %}">
+        <a class="nav-link navh" href="/faq">FAQs <span class="sr-only">(current)</span></a>
+      </li>
+
+
+
+    </ul>
+
+  </div>
+</nav>
+{% for message in messages %}
+      <div class="alert alert-{{message.tags}} alert-dismissible mb-0 fade show" role="alert">
+  <strong>Message:</strong>{{ message}}
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{% endfor %}
+{% block body %}
+   {% endblock body %}
+   
+   
+   <!--footer-->
+  		<footer class="footer-distributed "  >
+
+  		<div class="footer-left">
+
+  		<h4  id='abcd'>STET   <span>2020</span></h4>
+
+  		<p class="footer-links">
+  		<a href="sih.html">Home</a>
+  	·
+  		<a href="#">Support</a>
+  	·
+  		<a href="about.html">About</a>
+  	·
+  		<a href="#">FAQ</a>
+  	·
+  		<a href="#">Contact</a>
+  		</p>
+
+  		<p class="footer-company-name">A GOVT OF SIKKIM INITIATIVE &copy; 2020</p>
+  		</div>
+
+  		<div class="footer-center">
+
+  		<div>
+  		<i class="fa fa-map-marker"></i>
+  		<p><span>21 Revolution Street</span> SIKKIM, India</p>
+  		</div>
+
+  		<div>
+  		<i class="fa fa-phone"></i>
+  		<p>+91 1234567892</p>
+  		</div>
+
+  		<div>
+  		<i class="fa fa-envelope"></i>
+  		<p><a href="mailto:harshguptashnd@gmail.com">sikkim_stet</a></p>
+  		</div>
+
+  		</div>
+
+  		<div class="footer-right">
+
+  		<p class="footer-company-about">
+  		<span></span>
+  	For detailed information, visit our About section.
+  		</p>
+
+  		<div class="footer-icons">
+
+  		<a href="#"><i class="fa fa-facebook"></i></a>
+  		<a href="#"><i class="fa fa-twitter"></i></a>
+  		<a href="#"><i class="fa fa-linkedin"></i></a>
+  		<a href="#"><i class="fa fa-github"></i></a>
+
+  		</div>
+
+  		</div>
+
+  		</footer>
+   
+   
+   {% block js %}
+   {% endblock js %}
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+</body>
+</html>

@@ -1,0 +1,262 @@
+{% extends 'basic.html' %}
+{% block title %}
+Profile
+{% endblock title %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock link %}
+{% block body %}
+<!-- container  -->
+<div class="container mt-1">
+    <div class="row justify-content-center my-firstrow">
+      <h4 id='profile'>PROFILE</h4>
+    </div><br/>
+    <div class="row justify-content-center">
+      <center>
+        <img src="{% static 'images/blank1.png' %}" alt="blank profile image" style="height: 33vh; width: 16vw;">
+      </center>
+    </div><br/>
+     <div class="row justify-content-center">
+       <button class="btn btn-dark">Basic Details</button>
+     </div><br/>
+      <!--form1-->
+      <div class="form-sample">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+             <label class="col-sm-3 col-form-label"> Name</label>
+             <div class="col-sm-9">
+               <input type="text" class="form-control" name="name" placeholder="Nirupama Singh" disabled />
+              </div>
+             </div>
+           </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Email id</label>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" name="email" placeholder="example@gmail.com" disabled />
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Mobile no</label>
+          <div class="col-sm-9">
+             <input type="text" class="form-control" name="mobile" placeholder="4646498784561" disabled />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Date of Birth</label>
+          <div class="col-sm-9">
+            <input  type="text" class="form-control"name="birth" placeholder="12/04/2001" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Gender</label>
+          <div class="col-sm-9">
+             <input type="text" class="form-control" name="gender" placeholder="Female" disabled />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Aadharcard no</label>
+          <div class="col-sm-9">
+            <input  type="text" class="form-control"name="aadhar" placeholder="448489785415" disabled />
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+
+<br/>
+      <div class="row justify-content-center">
+       <button class="btn btn-dark">Family Details</button>
+      </div><br/>
+        <!--form1-->
+      <div class="form-sample">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+             <label class="col-sm-3 col-form-label"> Father's Name</label>
+             <div class="col-sm-9">
+               <input type="text" class="form-control" name="father" placeholder="Amit Singh" disabled />
+              </div>
+             </div>
+           </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Mothers's Name</label>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" name="mother" placeholder="Kanchan Singh" disabled />
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label"> Father's Mob</label>
+          <div class="col-sm-9">
+             <input type="text" class="form-control" name="fathersmob" placeholder="4646498784" disabled />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Mother's Mob</label>
+          <div class="col-sm-9">
+            <input  type="text" class="form-control"name="mothersmob" placeholder="76555" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+        <br/>
+       <div class="row justify-content-center">
+        <button class="btn btn-dark">Correspondance Address</button>
+       </div>
+       <br/>
+         <!--form3-->
+      <div class="form-sample">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+             <label class="col-sm-3 col-form-label">  Address Line1</label>
+             <div class="col-sm-9">
+               <input type="text" class="form-control" name="address1" placeholder="Bajrang Nagar Lucknow" disabled />
+              </div>
+             </div>
+           </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Address Line2</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name="address2" placeholder="----------" disabled />
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label"> City</label>
+          <div class="col-sm-9">
+             <input type="text" class="form-control" name="fathersmob" placeholder="Lucknow" disabled />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">District</label>
+          <div class="col-sm-9">
+            <input  type="text" class="form-control"name="mothersmob" placeholder="-------" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label"> State</label>
+          <div class="col-sm-9">
+             <input type="text" class="form-control" name="fathersmob" placeholder=" Uttar-Pradesh" disabled />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Pincode</label>
+          <div class="col-sm-9">
+            <input  type="text" class="form-control"name="mothersmob" placeholder="464646" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+        <br/>
+        <div class="row justify-content-center">
+         <button class="btn btn-dark">Personal Address</button>
+       </div><br/>
+        <!--form3-->
+      <div class="form-sample">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group row">
+             <label class="col-sm-3 col-form-label">  Address Line1</label>
+             <div class="col-sm-9">
+               <input type="text" class="form-control" name="address1" placeholder="Delhi Sector-24" disabled />
+              </div>
+             </div>
+           </div>
+          <div class="col-md-6">
+            <div class="form-group row">
+              <label class="col-sm-3 col-form-label">Address Line2</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name="address2" placeholder="----------" disabled />
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label"> City</label>
+          <div class="col-sm-9">
+             <input type="text" class="form-control" name="fathersmob" placeholder="Delhi" disabled />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">District</label>
+          <div class="col-sm-9">
+            <input  type="text" class="form-control"name="mothersmob" placeholder="-------" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label"> State</label>
+          <div class="col-sm-9">
+             <input type="text" class="form-control" name="fathersmob" placeholder=" New-Delhi" disabled />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Pincode</label>
+          <div class="col-sm-9">
+            <input  type="text" class="form-control"name="mothersmob" placeholder="23423" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+{% endblock body %}

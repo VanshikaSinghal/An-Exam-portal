@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admit Card STET 2020</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/admain.css'%}">
+    </head>
+<body>
+<p align="right"><input type="button" id="printpagebutton" value="Print this page" onClick="printpage()"></p>
+ 
+ <div class="container mb-2">
+   
+     <div id="border">
+         
+	     <div id="two" >
+	         <h3 align="center"><b>ADMIT CARD <br> 
+	         <br> SIKKIM TEACHER ELIGIBILITY TEST 2020</b></h3>
+	     </div>
+	         <div class="cleaner"></div>
+	         <div id="main">
+             
+	             <h5><span>LEVEL :</span><p class="detail" name="detail"> </p></h5>
+	             <h5><span>ROLL NO :</span></h5><p class="detail" name="detail"></p>
+	             <h5><span>DATE OF BIRTH :</span></h5><p class="detail" name="detail"></p>
+	             <h5><span>VERNACULAR OPTION :</span></h5><p class="detail" name="detail"></p>
+	             <h5><span>NAME :</span></h5>
+	             <h5><span>MOTHER'S NAME :</span></h5><p class="detail" name="detail"></p>
+	             <h5><span>EMAIL ADDRESS :</span></h5><p class="detail" name="detail"></p>
+	             <h5><span>DATE OF EXAM :</span></h5><p class="detail" name="detail"></p>
+	             <h5><span>VENUE :</span></h5><p class="detail" name="detail"></p>
+	             <h5><span>TIME :</span></h5><p class="detail" name="detail"></p>
+	             
+	             
+	         </div>
+	         <div id="photo">
+	             <h6 align="center">PASTE YOUR RECENT PASSPORT SIZE PHOTO & GET IT ATTESTED FROM A GAZETTED OFFICER
+	             <br>
+	             <br>
+	             <b>(WITH SEAL)</b></h6>
+	         </div>
+	         <div class="clear"></div>
+	         <br>
+	         <br>
+	         
+	         <div id="sign"></div>
+	         <br>
+	         <h5><b><u>SIGNATURE OF THE CANDIDATE </u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CONTROLLER OF EXAMINATIONS</b></h5>
+	         <br>
+	         <h4><u><b>Directions for the candidates</b></u></h4>
+	         <ol>
+	             <li>Examination Hall will be opened 15 minutes before the time specified for the commencement of the Examination. No candidate will be allowed after the commencement of Exam. </li>
+	             
+	             <li> Candidate should find their place as per the seating plan and be seated before the Exams commencement.</li>
+	             
+	             <li>Candidates should maintain silence and discipline during Exams as expected and should not leave the exam room/Hall without handing over the OMR Answer sheet.</li>
+	             
+	             <li> Candidates should blacken properly the answer circles and other details in the OMR with Blue/black Ball point pen. Be sure of your choice before blackening your answer and other details. Corrections should be strictly avoided.OMR sheet should not be folded .</li>
+	             
+	             <li>No candidate will be allowed to sit in the Exams without the emailed Admit card.Ensure that your photograph has been attested. Carrying an Identity Proof of yourself is advised.</li>
+	             
+	             <li>Mobiles/Electronic gadgets are not allowed inside the Exam Hall/Room.</li>
+	             
+	             <li>Giving or taking assistance directly or indirectly will be treated as Unfair Means(UFM).</li>
+	             
+	             <li>Centre Superintendents decision will be final on UFMs and candidates found guilty will be debarred for 5 years from appearing in STET.</li>
+	             
+	             <li>All passed candidates will be issued certificates only after the final scrutiny of their documents/marksheets submitted in hard copy.</li>
+	             
+	             <li>This Admit Card is issued only to those candidates who submitted their forms online & also the Hard-copy at HRDD for verification and authenticity.</li>
+	         </ol>
+	         
+	         <h6 align="center"><b>This hall ticket must be retained and produced at the time of joining</b></h6>
+	         
+	         
+	         
+	         
+
+       
+         
+     </div>
+     
+ </div>
+    <script type="text/javascript">
+    function printpage() {
+        //Get the print button and put it into a variable
+        var printButton = document.getElementById("printpagebutton");
+        //Set the print button visibility to 'hidden' 
+        printButton.style.visibility = 'hidden';
+        //Print the page content
+        window.print()
+        //Set the print button to 'visible' again 
+        //[Delete this line if you want it to stay hidden after printing]
+        printButton.style.visibility = 'visible';
+    }
+</script>
+    
+</body>
+</html>

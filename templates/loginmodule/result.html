@@ -1,0 +1,118 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}
+Result
+{% endblock title %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/reult1.css' %}">
+{% endblock link %}
+{% block body %}
+<!-- container  -->
+<div class="container mt-1 conn" id ="cin">
+      <h1 align=center>RESULT</h1>
+      <div class="jumbotron" id="tet">
+        <h3 id='yy'>STET Examination</h3>
+        <div class="table-responsive">
+        <table align='center'>
+  <tr>
+    <td>Application No.</td>
+    <td></td>
+    <td>Roll No.</td>
+    <td></td>
+
+  </tr>
+  <tr>
+    <td>Candidate's Name</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+  <tr>
+    <td>Father's Name</td>
+    <td>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Category</td>
+    <td></td>
+    <td>Person with Disability</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Gender</td>
+    <td></td>
+    <td>Date Of Birth</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>State</td>
+    <td></td>
+    <td>Nationality</td>
+    <td></td>
+  </tr>
+</table>
+</div>
+ <br>
+ <div class="table-responsive">
+ <table align='center' class='jj'>
+   <tr>
+     <th colspan="2">Paper-1</th>
+     <th colspan="2">Paper-2</th>
+   </tr>
+   <tr>
+   <td>Subject</td>
+   <td>NTA Score</td>
+   <td>Subject</td>
+   <td>NTA Score</td>
+   </tr>
+   <tr>
+   <td>Physics</td>
+   <td></td>
+   <td>Mthematics</td>
+   <td></td>
+   </tr>
+   <tr>
+   <td>Chemistry</td>
+   <td></td>
+   <td>Aptitude Test</td>
+   <td></td>
+   </tr>
+   <tr>
+   <td>Mathematics</td>
+   <td></td>
+   <td>Drawing Test</td>
+   <td></td>
+   </tr>
+   <tr>
+   <td>Total</td>
+   <td></td>
+   <td>Total</td>
+   <td></td>
+   </tr>
+ </table>
+ <br>
+ 
+</div>
+      <div class="row justify-content-center my-thirdrow">
+      <button class="btn  btn-primary down" onclick="printDiv('cin')"><i class="fa fa-download">&nbsp;Print</i> </button>
+  </div>
+      </div>
+    </div>
+
+{% endblock body %}
+{% block js %}
+<script>
+     function printDiv(cin) {
+     var printContents = document.getElementById(cin).innerHTML;
+     var originalContents = document.body.innerHTML;
+
+     document.body.innerHTML = printContents;
+
+     window.print();
+
+     document.body.innerHTML = originalContents;}
+    </script>
+
+{% endblock js %}

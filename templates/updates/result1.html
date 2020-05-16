@@ -1,0 +1,38 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block title %}
+Result
+{% endblock title %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'css/reult.css' %}">
+{% endblock link %}
+{% block body %}
+
+<!-- container  -->
+<div class="container new1">
+     <br>
+    <h3 align='center'>Enter Roll Number and Password to see Result</h3>
+   <div class="jumbotron inn">
+      
+         <form align="center" method="get">
+          <div class="content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Roll No :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input name="text" type="text">
+          
+          <br>
+          <br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input name="text" type="password">
+          </div>
+          
+          <p></p>
+          </form>
+          
+          <div class="col text-center new">
+            <button id=but1 type="button" class="btn btn-dark">RESULT</button>
+          </div>
+          <br>
+          <h6 id='cf'><a href="#" data-toggle="popover" data-trigger="hover" data-content="You can also put your Application Number in place of Roll Number">Forgot Admit Card Number ?</a></h6>
+         </div>
+         </div>
+{% endblock body %}
