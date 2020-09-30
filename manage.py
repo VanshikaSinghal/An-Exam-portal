@@ -3,6 +3,7 @@
 import os
 import sys
 
+#function start
 
 def main():
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'stet.settings')
