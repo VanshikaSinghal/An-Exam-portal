@@ -12,6 +12,8 @@ class Contact(models.Model):
     def __str__(self):
         return 'Message From'+self.name
 
+    
+#to fetch  current events for the exam site for stet
 class currentevents(models.Model):
     cno = models.AutoField(primary_key=True)
     file =models.FileField(upload_to ='portal/files' ,default='')
@@ -35,7 +37,7 @@ class news(models.Model):
 
     def __str__(self):
         return self.nname
-
+# to take registration of user
 class Register(models.Model):
     applicantno = models.AutoField(primary_key=True)
     fname = models.CharField(max_length=100)
